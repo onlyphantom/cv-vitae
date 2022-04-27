@@ -1,0 +1,138 @@
+---
+name: Vincent
+surname: Yannuzi
+position: "Machine Learning Developer"
+address: "School of Physics & Chemistry, École Normale Supérieure"
+phone: (918) 743-5333 
+www: vincent3.com
+email: "vincent.yann@audacity.org"
+twitter: vincent3
+github: vincent3
+linkedin: vincent3
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+ vitae::awesomecv:
+   page_total: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Summary
+
+## Bullet Points
+1. Point number 1
+1. I poisoned myself doing research.
+1. I was the first woman to win a Nobel prize
+    - Which is a pretty big deal
+    - I don't _get enough credit_ for that
+1. I was the first person and **only woman** to win a Nobel prize in two different sciences.
+
+## Work Summary
+
+Help companies create deep sustainable advantages using machine learning and (applied) data science processes. I have demonstrable experience in implementing business frameworks, set up data pipelines, and creating an overall accountable work culture that encourages and reinforces metric-based decision making. As an active practitioner, I have **developed tools and software used by [Fortune 500 companies](https://en.wikipedia.org/wiki/Fortune_500) in the field of marketing automation, ad fraud prevention and e-commerce**. 
+I am adaptable to new environments, having lived in China for 9 months, as well as in Japan, Taiwan, Thailand between 2013 to 2016 where I was tasked to build and develop regional teams in the domain of publishing ops and analytics.
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Informal studies", "1889-91", "Flying University", "Warsaw, Poland",
+  "Master of Physics", "1893", "Sorbonne Université", "Paris, France",
+  "Master of Mathematics", "1894", "Sorbonne Université", "Paris, France"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+## Links
+
+  * [LinkedIn](https://www.linkedin.com/in/chansamuel/)
+  * [GitHub](https://github.com/onlyphantom)
+  * [Stack Overflow](https://stackoverflow.com/users/7515530/onlyphantom?tab=profile)
+  * [RStudio Certified Trainer: **Vincent Yannuzi**](https://education.rstudio.com/trainers/people/chan+samuel/)
+
+
+# Achievements
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc,
+  1903, "Physics", "Awarded for her work on radioactivity with Pierre Curie and Henri Becquerel",
+  1911, "Chemistry", "Awarded for the discovery of radium and polonium"
+) %>% 
+  brief_entries(
+    glue::glue("Nobel Prize in {Type}"),
+    Year, 
+    Desc
+  )
+```
+
+# Notable Experience
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  # Supertype
+  "Co-Founder", "Supertype", "Greater Jakarta Area", "July 2020 - Present", "Conceptualize, develop, and launch commercial-ready solutions in the field of Artificial Intelligence for e-commerce and mobile app publishers",
+  "Co-Founder", "Supertype", "Greater Jakarta Area", "July 2020 - Present", "Recruit and nurture Indonesian talents in various field of applied artificial intelligence, by assigning them into work units and match them with qualified mentors from the different industries",
+ # Algoritma
+  "Co-Founder, Corporate Consultant", "Algoritma", "Greater Jakarta Area", "July 2017 - Present", "Develop consultative training centered around the topics of machine learning, data mining, business intelligence / visualization, automation. Consult more than 20+ companies around the SEA region: in-house curriculum development, AI adoption, business intelligence, automation, algorithmic modelling and statistical work in R, SQL, Python.",
+  "Co-Founder, Corporate Consultant", "Algoritma", "Greater Jakarta Area", "July 2017 - Present", "Technical committee member and competition judge on Finhacks 2018, the largest Machine Learning competition of the year organized by PT. Bank Central Asia (BCA) and DailySocial.",
+   "Co-Founder, Corporate Consultant", "Algoritma", "Greater Jakarta Area", "July 2017 - Present", "Active trainer for various companies in the financial industry with up to 6 months of ongoing engagement. My team and I have delivered training / speaking sessions in various campuses: Binus, NUS (National University of Singapore)’s The Logistics Institute, University of Indonesia, Universitas Gadjah Mada (UGM), Swiss-German University, Binus, Institute of Technology Bandung (ITB), Telkom University etc. Courses I authored are offered also in Singapore through Ngee Ann Polytechnic.",
+  # HyperGrowth
+    "Founder and CEO", "HyperGrowth", "Greater Jakarta Area", "April 2014 - July 2017", "Works with Indonesia's leading e-commerce businesses and mobile studios on market penetration and customer base growth execution. The company's flagship product, Audience Kit, is an audience management platform that combines the intuitiveness of a CRM with people-based analytics. Users create segments based on sophisticated chains of behavioral-conditions, and programmatically engage with each segment through re-marketing ads or in-app notifications.",
+     "Founder and CEO", "HyperGrowth", "Greater Jakarta Area", "April 2014 - July 2017", "HeadQuarters is a tool the company has developed to promote greater accountability in mobile marketing. Used by some of the largest mobile advertisers in SEA to counter mobile ad fraud, gain visibility, improve ROI-measurability and generate campaign insights, it's automation tools shift the focus from user-acquisition to customer-acquisition. In addition to its core products, the company provides consultation and custom services to help apps and businesses scale its customer base.",
+      "Founder and CEO", "HyperGrowth", "Greater Jakarta Area", "April 2014 - July 2017", "Oversee the company's expansion from its home market and headquarter in Singapore to Indonesia. Managed the market and product development team spread across 3 offices (Singapore, Vietnam, Indonesia) and its market development efforts.",
+ 
+ # Gumi
+    "Marketing Head", "gumi Asia (gumi Inc, TYO: 3903)", "Singapore", "June 2013 - June 2014", " In charge of mobile game marketing and publishing, and setting up a metrics-driven user acquisition framework that delivers extremely high Return on Ad Spend consistently",
+    "Marketing Head", "gumi Asia (gumi Inc, TYO: 3903)", "Singapore", "June 2013 - June 2014", "User acquisition, ad buying, counter-fraud, conversion optimization, programmatic media buying, performance advertising, cohort analysis, funnel analysis and behavioral tracking",
+     "Marketing Head", "gumi Asia (gumi Inc, TYO: 3903)", "Singapore", "June 2013 - June 2014", "Establish protocols for user acquisition and user care, while overseeing a team of 60 in Philippines and Singapore on all projectes relating to community building, community partnerships, customer support and events",
+      "Marketing Head", "gumi Asia (gumi Inc, TYO: 3903)", "Singapore", "June 2013 - June 2014", "Create long-term value for the company through the development of LTV-centric user acquisition frameworks and strategic partnerships with media buying companies",
+      "Marketing Head", "gumi Asia (gumi Inc, TYO: 3903)", "Singapore", "June 2013 - June 2014", "Published Brave Frontier (iOS, Android, Amazon) - top-grossing game in 8 different countries, grossing USD 300,000 to USD 1,000,000 every day for the whole calendar year, which is a major contributing factor to the company's public listing 12 months later"
+ ) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+
+# Publications
+
+```{r}
+library(dplyr)
+knitr::write_bib(c("vitae", "tibble"), "packages.bib")
+
+bibliography_entries("packages.bib") %>%
+  arrange(desc(author$family), issued)
+```
+
+# Community Projects
+
+## Blockchain Academy
+- A series of initiatives to promote a healthy ecosystem that is **centered on actual business adoption and real education** -- away from the hype and noise of _web3_ -- of blockchain for enterprises.  
+
+1. Link: [Learn Blockchain Academy](https://learnblockchain.academy)
+1. Link: [Learn Blockchain Academy](https://learnblockchain.academy)
+1. Link: [Ethereum Smart Contract Programming](https://www.youtube.com/playlist?list=PLXsFtK46HZxVK1r-Irndd9gMBMdouLrMQ)
+1. Link: [Web3, dApp Development](https://www.youtube.com/playlist?list=PLXsFtK46HZxWCWz_IGPMPwx381xgWRbLh)
+
+
+## Corgi, Automated course production tool
+* Solo, full-stack developer and publisher of a web-based tool (https://corgi.re) that allow anyone to create and publish interactive quizzes online, from the convenience of a markdown file. The automation tool takes a markdown file and auto-magically creates a web version of an interactive quiz set, allowing learners from around the world to be students and course producers with little work and no cost.  
+
+* Link: [Corgi, Courses on GitHub](https://corgi.re)
+
+## Pedagogy, Open-source performance management tool for educators
+* Solo, full-stack developer and publisher of a _performance management app_ for education professionals that combines performance tracking with various analytics and feedback management
+  1. Link: [Pedagogy Open-Source Code](https://github.com/onlyphantom/pedagogy)
+  1. Link: [Pedagogy in Production](https://pedagogyapp.com)
+
+## Supertype Development Program
+* Initiator and Program Lead of a social initiative that brings half-learn, half-work opportunities to participants who want to break into the data science and machine learning domain. The program combines mentorship, learning units, and a semi-structured learning path to help participants develop the skills required to take on paid client work, arranged by Supertype.
+* Link: [Supertype Development Program](https://supertype.ai/development)
+
+
+
+
